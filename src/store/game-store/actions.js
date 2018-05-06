@@ -22,3 +22,33 @@ export const setPlayerName = (players, id, name) => ({
   type: t.SET_PLAYER_NAME,
   payload: { players, id, name }
 });
+
+
+export const changeActivePlayerId = () => ({
+  type: t.CHANGE_ACTIVE_PLAYER_ID
+});
+
+export const updateScoreOfPlayer = (numberScored, rolls) => ({
+  type: t.UPDATE_SCORE_OF_PLAYER,
+  payload: { numberScored, rolls }
+});
+
+export const updateTotalScoreOfPlayer = (numberScored) => ({
+  type: t.UPDATE_TOTAL_SCORE_OF_PLAYER,
+  payload: { numberScored }
+
+});
+
+export const setStrike = (rounds = 2) => ({
+  type: t.SET_STRIKE,
+  payload: { rounds }
+
+});
+
+export const setSpare = () => ({
+  type: t.SET_SPARE
+});
+
+export const reduceBonusRounds = () => ({
+  type: t.REDUCE_BONUS_ROUNDS
+});

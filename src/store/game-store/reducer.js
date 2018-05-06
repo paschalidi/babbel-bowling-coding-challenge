@@ -1,4 +1,6 @@
 import * as t from './actionTypes';
+import * as R from 'ramda';
+import * as G from '../../utils/global';
 
 
 export const scores = {
@@ -25,6 +27,12 @@ export const reducer = (state = INITIAL_STATE, { type, payload }) => {
     case t.INIT_GAME:
       return { ...state, show: 'PlayerSelectionPanel' };
 
+    case t.RESET_GAME:
+      return INITIAL_STATE;
+
+    case t.START_GAME:
+      return { ...state, show: 'BowlingGamePanel' };
+
     case t.SET_AMOUNT_OF_PLAYERS:
       let players = [...new Array(payload.amount)].map((index, i) => i + 1);
       return {
@@ -50,7 +58,39 @@ export const reducer = (state = INITIAL_STATE, { type, payload }) => {
 
       return R.set(path, name, state);
 
-  }
+    case t.UPDATE_SCORE_OF_PLAYER:
+      path = R.lensPath(['players', [state.indexOfActivePlayer], 'scores', [state.gameRound], [payload.rolls]]);
+      return R.set(path, payload.numberScored, state);
 
+    case t.UPDATE_TOTAL_SCORE_OF_PLAYER:
+      path = R.lensPath(['players', [state.indexOfActivePlayer], 'totalScore']);
+      const currentTotalScore = R.view(path, state);
+      return R.set(path, currentTotalScore + payload.numberScored, state);
+
+    case t.CHANGE_ACTIVE_PLAYER_ID:
+      if (state.players[R.inc(state.indexOfActivePlayer)])
+        return {
+          ...state,
+          indexOfActivePlayer: G.getIndexFromId(state.players, state.players[R.inc(state.indexOfActivePlayer)].id)
+        };
+      return {
+        ...state,
+        indexOfActivePlayer: 0,
+        gameRound: R.inc(state.gameRound)
+      };
+
+    case t.SET_STRIKE:
+      path = R.lensPath(['players', [state.indexOfActivePlayer], 'bonusRounds']);
+      return R.set(path, payload.rounds, state);
+
+    case t.SET_SPARE:
+      path = R.lensPath(['players', [state.indexOfActivePlayer], 'bonusRounds']);
+      return R.set(path, 1, state);
+
+    case t.REDUCE_BONUS_ROUNDS:
+      path = R.lensPath(['players', [state.indexOfActivePlayer], 'bonusRounds']);
+      const bonus = R.view(path, state);
+      return R.set(path, R.dec(bonus), state);
+  }
   return state;
 };

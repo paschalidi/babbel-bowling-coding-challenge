@@ -1,0 +1,24 @@
+table {
+    border-spacing: 0 !important;
+    margin: 0 auto;
+}
+
+th {
+    text-align: center;
+    min-width: 30px;
+    min-height: 30px;
+    height: 30px;
+}
+
+th.border {
+    border: dotted white;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 2px;
+    border-bottom-width: 2px;
+}
+
+.border {
+    border: 1px solid white;
+
+}
