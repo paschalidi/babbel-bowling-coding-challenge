@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Button from 'src/components/Button/index';
+import InitialGamePanel from 'index';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render('<Button />', div);
+  ReactDOM.render('<InitialGamePanel />', div);
   ReactDOM.unmountComponentAtNode(div);
 });
