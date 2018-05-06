@@ -1,7 +1,6 @@
 {
   "name": "my-boilerplare",
   "version": "0.1.0",
-  "private": true,
   "dependencies": {
     "plop": "2.0.0",
     "prop-types": "15.6.1",
