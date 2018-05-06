@@ -23,7 +23,6 @@ export const setPlayerName = (players, id, name) => ({
   payload: { players, id, name }
 });
 
-
 export const changeActivePlayerId = () => ({
   type: t.CHANGE_ACTIVE_PLAYER_ID
 });

@@ -91,6 +91,8 @@ export const reducer = (state = INITIAL_STATE, { type, payload }) => {
       path = R.lensPath(['players', [state.indexOfActivePlayer], 'bonusRounds']);
       const bonus = R.view(path, state);
       return R.set(path, R.dec(bonus), state);
+    default:
+      return state;
+
   }
-  return state;
 };
