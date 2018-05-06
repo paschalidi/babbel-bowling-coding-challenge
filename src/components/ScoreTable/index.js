@@ -10,8 +10,7 @@
 import React, { Fragment } from 'react';
 import { Grid } from 'semantic-ui-react';
 import { LAST_ROUND } from '../../utils/constants';
-
-import styles from './styles.css';
+import PT from 'prop-types';
 
 
 const ScoreTable = ({ indexOfActivePlayer, players }) =>
@@ -56,5 +55,29 @@ const ScoreTable = ({ indexOfActivePlayer, players }) =>
       )
     }
   </Grid.Row>;
+
+ScoreTable.defaultProps = {
+  indexOfActivePlayer: 0,
+  players: {
+    0: {
+      id: 0, name: `Player 1`, bonusRounds: 0, totalScore: 0, scores: {
+        0: { 0: null, 1: null },
+        1: { 0: null, 1: null },
+        2: { 0: null, 1: null },
+        3: { 0: null, 1: null },
+        4: { 0: null, 1: null },
+        5: { 0: null, 1: null },
+        6: { 0: null, 1: null },
+        7: { 0: null, 1: null },
+        8: { 0: null, 1: null },
+        9: { 0: null, 1: null, 2: null }
+      }
+    }
+  }
+};
+ScoreTable.ScoreTable = {
+  indexOfActivePlayer: PT.number.isRequired,
+  players: PT.object.isRequired
+};
 
 export default ScoreTable;

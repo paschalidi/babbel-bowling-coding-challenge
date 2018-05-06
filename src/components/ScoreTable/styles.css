@@ -3,6 +3,10 @@ table {
     margin: 0 auto;
 }
 
+table.border {
+    border: 1px solid white;
+}
+
 th {
     text-align: center;
     min-width: 30px;
@@ -16,9 +20,4 @@ th.border {
     border-right-width: 0px;
     border-left-width: 2px;
     border-bottom-width: 2px;
-}
-
-.border {
-    border: 1px solid white;
-
 }
