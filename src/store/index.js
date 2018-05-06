@@ -1,6 +1,4 @@
 import { combineReducers } from 'redux';
-
-import data from './game-store/data/pins';
 import { reducer } from './game-store';
 
 
