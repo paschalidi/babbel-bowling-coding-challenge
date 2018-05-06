@@ -1,5 +1,83 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Monoton', cursive;
+}
+
+.ui,
+h1, h2, h3 {
+    color: white;
+    font-family: 'Monoton', cursive !important;
+}
+
+.text-lg {
+    font-size: 3em;
+    line-height: 1em;
+}
+
+.text-md {
+    font-size: 2em;
+    line-height: 1em;
+}
+
+.text-sm {
+    font-size: 1em;
+    line-height: 1em;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex.panel {
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.page-view {
+    width: 100vw;
+    height: 100vh;
+}
+
+.glowing-text {
+    color: #fff;
+    -webkit-animation: neon-purple 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon-purple 1.5s ease-in-out infinite alternate;
+    animation: neon-purple 1.5s ease-in-out infinite alternate;
+}
+
+.glowing-text-active {
+    color: #fff;
+    -webkit-animation: neon 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon 1.5s ease-in-out infinite alternate;
+    animation: neon 1.5s ease-in-out infinite alternate;
+}
+
+.glowing-text-inactive {
+    color: #fff;
+}
+
+@-webkit-keyframes neon {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+    }
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+    }
+}
+
+@-webkit-keyframes neon-purple {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #600CE8, 0 0 70px #600CE8, 0 0 80px #600CE8, 0 0 100px #600CE8, 0 0 150px #600CE8;
+    }
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #600CE8, 0 0 35px #600CE8, 0 0 40px #600CE8, 0 0 50px #600CE8, 0 0 75px #600CE8;
+    }
+}
+
+.background-color-black {
+    background: black;
 }
