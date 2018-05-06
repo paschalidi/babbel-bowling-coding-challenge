@@ -11,6 +11,7 @@ import React, { Fragment } from 'react';
 import { Grid } from 'semantic-ui-react';
 import { LAST_ROUND } from '../../utils/constants';
 import PT from 'prop-types';
+import styles from './styles.css';
 
 
 const ScoreTable = ({ indexOfActivePlayer, players }) =>
