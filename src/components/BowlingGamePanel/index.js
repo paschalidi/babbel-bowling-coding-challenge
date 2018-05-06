@@ -10,7 +10,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import * as R from 'ramda';
-import * as actions from '../../store/bowling-store/actions';
+import * as actions from '../../store/game-store/actions';
 import { Grid, Button } from 'semantic-ui-react';
 import ScoreTable from '../ScoreTable';
 import { DELAY, LAST_ROUND } from '../../utils/constants';
@@ -70,7 +70,6 @@ class BowlingGamePanel extends React.Component { // eslint-disable-line react/pr
       return setTimeout(this.handlePlayerChangeLogic, DELAY);
     }
     else if (totalScore === 10 && this.props.gameRound === LAST_ROUND && !this.state.isSpecialLastRound) {
-      console.log(this.state.rollsCounter);
       if (this.state.rolls === 1)
         this.props.setStrike();
       else if (this.state.rolls === 0)
@@ -96,7 +95,7 @@ class BowlingGamePanel extends React.Component { // eslint-disable-line react/pr
   render() {
     const { players, indexOfActivePlayer, gameRound, amountOfPlayers } = this.props;
     return (
-      <div className='page-view background-color-black' style={{ paddingTop: '2vw' }}>
+      <div className='flex panel background-color-black'>
         <Grid container centered stackable className='background-color-black'>
           <Grid.Row>
             <Grid.Column textAlign='center'>
