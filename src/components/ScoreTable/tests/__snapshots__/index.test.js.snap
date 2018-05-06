@@ -1,0 +1,231 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ScoreTable renders 1`] = `
+<div
+  className="eleven column row"
+>
+  <div
+    className="column"
+  >
+    <table
+      className="border"
+    >
+      <tbody>
+        <tr>
+          <th />
+          <th
+            className="border"
+          />
+        </tr>
+        <tr>
+          <th />
+          <th>
+            0
+          </th>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div
+    className="column"
+  >
+    <table
+      className="border"
+    >
+      <tbody>
+        <tr>
+          <th />
+          <th
+            className="border"
+          />
+        </tr>
+        <tr>
+          <th />
+          <th>
+            0
+          </th>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div
+    className="column"
+  >
+    <table
+      className="border"
+    >
+      <tbody>
+        <tr>
+          <th />
+          <th
+            className="border"
+          />
+        </tr>
+        <tr>
+          <th />
+          <th>
+            0
+          </th>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div
+    className="column"
+  >
+    <table
+      className="border"
+    >
+      <tbody>
+        <tr>
+          <th />
+          <th
+            className="border"
+          />
+        </tr>
+        <tr>
+          <th />
+          <th>
+            0
+          </th>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div
+    className="column"
+  >
+    <table
+      className="border"
+    >
+      <tbody>
+        <tr>
+          <th />
+          <th
+            className="border"
+          />
+        </tr>
+        <tr>
+          <th />
+          <th>
+            0
+          </th>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div
+    className="column"
+  >
+    <table
+      className="border"
+    >
+      <tbody>
+        <tr>
+          <th />
+          <th
+            className="border"
+          />
+        </tr>
+        <tr>
+          <th />
+          <th>
+            0
+          </th>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div
+    className="column"
+  >
+    <table
+      className="border"
+    >
+      <tbody>
+        <tr>
+          <th />
+          <th
+            className="border"
+          />
+        </tr>
+        <tr>
+          <th />
+          <th>
+            0
+          </th>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div
+    className="column"
+  >
+    <table
+      className="border"
+    >
+      <tbody>
+        <tr>
+          <th />
+          <th
+            className="border"
+          />
+        </tr>
+        <tr>
+          <th />
+          <th>
+            0
+          </th>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div
+    className="column"
+  >
+    <table
+      className="border"
+    >
+      <tbody>
+        <tr>
+          <th />
+          <th
+            className="border"
+          />
+        </tr>
+        <tr>
+          <th />
+          <th>
+            0
+          </th>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div
+    className="column"
+  >
+    <table
+      className="border"
+    >
+      <tbody>
+        <tr>
+          <th />
+          <th
+            className="border"
+          />
+          <th
+            className="border"
+          />
+        </tr>
+        <tr>
+          <th />
+          <th>
+            0
+          </th>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;

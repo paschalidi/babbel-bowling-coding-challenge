@@ -1,9 +1,19 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import InitialGamePanel from 'index';
+import renderer from 'react-test-renderer';
+import InitialGamePanel from '../index';
+import { Provider } from 'react-redux';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render('<InitialGamePanel />', div);
-  ReactDOM.unmountComponentAtNode(div);
+import Store from '../../../store/configure';
+const StoreInstance = Store();
+
+test('InitialGamePanel renders', () => {
+  const component = renderer.create(
+    <Provider store={StoreInstance}>
+      <InitialGamePanel />
+    </Provider>
+  );
+  let tree;
+
+  tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
 });

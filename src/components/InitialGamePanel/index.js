@@ -10,7 +10,7 @@
 import React from 'react';
 import { Grid, Button } from 'semantic-ui-react';
 import { connect } from 'react-redux';
-import * as actions from '../../store/bowling-store/actions';
+import * as actions from '../../store/game-store/actions';
 
 
 class InitialGamePanel extends React.Component { // eslint-disable-line react/prefer-stateless-function

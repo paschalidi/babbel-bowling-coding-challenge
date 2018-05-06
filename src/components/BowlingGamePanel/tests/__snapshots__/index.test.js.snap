@@ -1,0 +1,300 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BowlingGamePanel renders 1`] = `
+<div
+  className="flex panel background-color-black"
+>
+  <div
+    className="ui centered container stackable grid background-color-black"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="center aligned column"
+      >
+        <div
+          className="glowing-text text-lg"
+        >
+          Babbel Bowling
+        </div>
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="center aligned column"
+      >
+        <div
+          className="glowing-text text-md"
+        >
+          ROUND - 
+          0
+           -
+        </div>
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="center aligned column"
+      >
+        <div
+          className="glowing-text-active text-md"
+        >
+          Player 1
+        </div>
+        <div
+          className="glowing-text-active text-sm"
+        >
+          * 
+          0
+           *
+        </div>
+      </div>
+    </div>
+    <div
+      className="eleven column row"
+    >
+      <div
+        className="column"
+      >
+        <table
+          className="border"
+        >
+          <tbody>
+            <tr>
+              <th />
+              <th
+                className="border"
+              />
+            </tr>
+            <tr>
+              <th />
+              <th>
+                0
+              </th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div
+        className="column"
+      >
+        <table
+          className="border"
+        >
+          <tbody>
+            <tr>
+              <th />
+              <th
+                className="border"
+              />
+            </tr>
+            <tr>
+              <th />
+              <th>
+                0
+              </th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div
+        className="column"
+      >
+        <table
+          className="border"
+        >
+          <tbody>
+            <tr>
+              <th />
+              <th
+                className="border"
+              />
+            </tr>
+            <tr>
+              <th />
+              <th>
+                0
+              </th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div
+        className="column"
+      >
+        <table
+          className="border"
+        >
+          <tbody>
+            <tr>
+              <th />
+              <th
+                className="border"
+              />
+            </tr>
+            <tr>
+              <th />
+              <th>
+                0
+              </th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div
+        className="column"
+      >
+        <table
+          className="border"
+        >
+          <tbody>
+            <tr>
+              <th />
+              <th
+                className="border"
+              />
+            </tr>
+            <tr>
+              <th />
+              <th>
+                0
+              </th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div
+        className="column"
+      >
+        <table
+          className="border"
+        >
+          <tbody>
+            <tr>
+              <th />
+              <th
+                className="border"
+              />
+            </tr>
+            <tr>
+              <th />
+              <th>
+                0
+              </th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div
+        className="column"
+      >
+        <table
+          className="border"
+        >
+          <tbody>
+            <tr>
+              <th />
+              <th
+                className="border"
+              />
+            </tr>
+            <tr>
+              <th />
+              <th>
+                0
+              </th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div
+        className="column"
+      >
+        <table
+          className="border"
+        >
+          <tbody>
+            <tr>
+              <th />
+              <th
+                className="border"
+              />
+            </tr>
+            <tr>
+              <th />
+              <th>
+                0
+              </th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div
+        className="column"
+      >
+        <table
+          className="border"
+        >
+          <tbody>
+            <tr>
+              <th />
+              <th
+                className="border"
+              />
+            </tr>
+            <tr>
+              <th />
+              <th>
+                0
+              </th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div
+        className="column"
+      >
+        <table
+          className="border"
+        >
+          <tbody>
+            <tr>
+              <th />
+              <th
+                className="border"
+              />
+              <th
+                className="border"
+              />
+            </tr>
+            <tr>
+              <th />
+              <th>
+                0
+              </th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div
+      className="equal width row"
+    >
+      <button
+        className="ui purple inverted button"
+        disabled={undefined}
+        onClick={[Function]}
+        role="button"
+        tabIndex={undefined}
+      >
+        Throw the ball
+      </button>
+    </div>
+  </div>
+</div>
+`;

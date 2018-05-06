@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GameOverPanel renders 1`] = `
+<div
+  className="flex panel background-color-black"
+>
+  <div
+    className="ui centered container stackable grid"
+  >
+    <div
+      className="row"
+      style={
+        Object {
+          "paddingBottom": "5vw",
+        }
+      }
+    >
+      <div
+        className="glowing-text text-lg"
+      >
+        Game Over
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="glowing-text text-md"
+      >
+        The Winner Is 
+        Player 1
+      </div>
+    </div>
+    <div
+      className="row"
+      style={
+        Object {
+          "paddingBottom": "5vw",
+        }
+      }
+    >
+      <div
+        className="glowing-text text-md"
+      >
+        With Total Score 
+        0
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="glowing-text text-sm"
+      >
+        scores
+      </div>
+    </div>
+    <div
+      className="row"
+      style={
+        Object {
+          "paddingBottom": "5vw",
+        }
+      }
+    >
+      <div
+        className="center aligned column"
+      >
+        <div
+          className="glowing-text text-sm"
+        >
+          Player 1
+          <br />
+           
+          0
+        </div>
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <button
+        className="ui purple inverted button"
+        disabled={undefined}
+        onClick={[Function]}
+        role="button"
+        tabIndex={undefined}
+      >
+        Start a New Game
+      </button>
+    </div>
+  </div>
+</div>
+`;

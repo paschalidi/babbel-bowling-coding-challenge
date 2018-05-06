@@ -1,15 +1,15 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import PlayerSelectionPanel from '../index';
+import GameOverPanel from '../index';
 import { Provider } from 'react-redux';
+
 
 import Store from '../../../store/configure';
 const StoreInstance = Store();
-
-test('PlayerSelectionPanel renders', () => {
+test('GameOverPanel renders', () => {
   const component = renderer.create(
     <Provider store={StoreInstance}>
-      <PlayerSelectionPanel />
+      <GameOverPanel />
     </Provider>
   );
   let tree;

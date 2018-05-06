@@ -1,9 +1,14 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import ScoreTable from 'index';
+import renderer from 'react-test-renderer';
+import ScoreTable from '../index';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render('<ScoreTable />', div);
-  ReactDOM.unmountComponentAtNode(div);
+
+test('ScoreTable renders', () => {
+  const component = renderer.create(
+    <ScoreTable />
+  );
+  let tree;
+
+  tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
 });

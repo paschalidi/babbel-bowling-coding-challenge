@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders 1`] = `
+<div
+  className="flex panel background-color-black"
+>
+  <div
+    className="ui centered container grid"
+  >
+    <div
+      className="row"
+      style={
+        Object {
+          "paddingBottom": "5vw",
+        }
+      }
+    >
+      <div
+        className="glowing-text text-lg"
+      >
+        Welcome to Babbel Bowling!
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <button
+        className="ui purple inverted button"
+        disabled={undefined}
+        onClick={[Function]}
+        role="button"
+        tabIndex={undefined}
+      >
+        New Game
+      </button>
+    </div>
+    <div
+      className="row"
+    >
+      <a
+        href="https://www.thoughtco.com/bowling-scoring-420895"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <button
+          className="ui purple inverted button"
+          disabled={undefined}
+          onClick={[Function]}
+          role="button"
+          tabIndex={undefined}
+        >
+          Rules
+        </button>
+      </a>
+    </div>
+  </div>
+</div>
+`;

@@ -9,7 +9,7 @@
 
 import React, { Fragment } from 'react';
 import { connect } from 'react-redux';
-import * as actions from '../../store/bowling-store/actions';
+import * as actions from '../../store/game-store/actions';
 import { Grid, Button, Input } from 'semantic-ui-react';
 
 

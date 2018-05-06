@@ -1,9 +1,19 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import BowlingGamePanel from 'index';
+import renderer from 'react-test-renderer';
+import BowlingGamePanel from '../index';
+import { Provider } from 'react-redux';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render('<BowlingGamePanel />', div);
-  ReactDOM.unmountComponentAtNode(div);
+import Store from '../../../store/configure';
+const StoreInstance = Store();
+
+test('BowlingGamePanel renders', () => {
+  const component = renderer.create(
+    <Provider store={StoreInstance}>
+      <BowlingGamePanel />
+    </Provider>
+  );
+  let tree;
+
+  tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
 });

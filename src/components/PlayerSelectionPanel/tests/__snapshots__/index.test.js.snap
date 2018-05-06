@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PlayerSelectionPanel renders 1`] = `
+<div
+  className="flex panel background-color-black"
+>
+  <div
+    className="ui centered container stackable grid"
+  >
+    <div
+      className="row"
+      style={
+        Object {
+          "paddingBottom": "5vw",
+        }
+      }
+    >
+      <div
+        className="glowing-text text-lg"
+      >
+        Select the amount of players
+      </div>
+    </div>
+    <div
+      className="four column row"
+    >
+      <div
+        className="center aligned two wide column"
+      >
+        <button
+          className="ui purple circular inverted button"
+          disabled={undefined}
+          onClick={[Function]}
+          role="button"
+          tabIndex={undefined}
+        >
+          1
+        </button>
+      </div>
+      <div
+        className="center aligned two wide column"
+      >
+        <button
+          className="ui purple circular inverted button"
+          disabled={undefined}
+          onClick={[Function]}
+          role="button"
+          tabIndex={undefined}
+        >
+          2
+        </button>
+      </div>
+      <div
+        className="center aligned two wide column"
+      >
+        <button
+          className="ui purple circular inverted button"
+          disabled={undefined}
+          onClick={[Function]}
+          role="button"
+          tabIndex={undefined}
+        >
+          3
+        </button>
+      </div>
+      <div
+        className="center aligned two wide column"
+      >
+        <button
+          className="ui purple circular inverted button"
+          disabled={undefined}
+          onClick={[Function]}
+          role="button"
+          tabIndex={undefined}
+        >
+          4
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
