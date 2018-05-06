@@ -22,6 +22,7 @@ export const INITIAL_STATE = {
   gameRound: 0,
   show: 'InitialGamePanel'
 };
+
 export const reducer = (state = INITIAL_STATE, { type, payload }) => {
   switch (type) {
     case t.INIT_GAME:
@@ -50,20 +51,17 @@ export const reducer = (state = INITIAL_STATE, { type, payload }) => {
       };
 
     case t.SET_PLAYER_NAME:
-      let indexOfFocusedPlayer = G.getIndexFromId(state.players, payload.id);
-      let path = R.lensPath(['players', [indexOfFocusedPlayer], 'name']);
+      let indexOfFocusedPlayer = G.getIndexFromId(payload.players, payload.id);
       let name = payload.name;
       if (payload.name.length === 0)
         name = `Player ${payload.id}`;
-
-      return R.set(path, name, state);
+      return R.set(R.lensPath(['players', [indexOfFocusedPlayer], 'name']), name, state);
 
     case t.UPDATE_SCORE_OF_PLAYER:
-      path = R.lensPath(['players', [state.indexOfActivePlayer], 'scores', [state.gameRound], [payload.rolls]]);
-      return R.set(path, payload.numberScored, state);
+      return R.set(R.lensPath(['players', [state.indexOfActivePlayer], 'scores', [state.gameRound], [payload.rolls]]), payload.numberScored, state);
 
     case t.UPDATE_TOTAL_SCORE_OF_PLAYER:
-      path = R.lensPath(['players', [state.indexOfActivePlayer], 'totalScore']);
+      const path = R.lensPath(['players', [state.indexOfActivePlayer], 'totalScore']);
       const currentTotalScore = R.view(path, state);
       return R.set(path, currentTotalScore + payload.numberScored, state);
 
@@ -80,17 +78,15 @@ export const reducer = (state = INITIAL_STATE, { type, payload }) => {
       };
 
     case t.SET_STRIKE:
-      path = R.lensPath(['players', [state.indexOfActivePlayer], 'bonusRounds']);
-      return R.set(path, payload.rounds, state);
+      return R.set(R.lensPath(['players', [state.indexOfActivePlayer], 'bonusRounds']), 2, state);
 
     case t.SET_SPARE:
-      path = R.lensPath(['players', [state.indexOfActivePlayer], 'bonusRounds']);
-      return R.set(path, 1, state);
+      return R.set(R.lensPath(['players', [state.indexOfActivePlayer], 'bonusRounds']), 1, state);
 
     case t.REDUCE_BONUS_ROUNDS:
-      path = R.lensPath(['players', [state.indexOfActivePlayer], 'bonusRounds']);
-      const bonus = R.view(path, state);
-      return R.set(path, R.dec(bonus), state);
+      const path2 = R.lensPath(['players', [state.indexOfActivePlayer], 'bonusRounds']);
+      const bonus = R.view(path2, state);
+      return R.set(path2, R.dec(bonus), state);
     default:
       return state;
 
