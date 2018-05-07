@@ -24,7 +24,7 @@ const ScoreTable = ({ indexOfActivePlayer, players }) =>
               <table className='border'>
                 <tbody>
                 {
-                  parseInt(index) !== LAST_ROUND
+                  parseInt(index, 10) !== LAST_ROUND
                     ?
                     <Fragment>
                       <tr>

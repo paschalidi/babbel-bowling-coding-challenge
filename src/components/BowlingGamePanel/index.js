@@ -115,10 +115,10 @@ class BowlingGamePanel extends React.Component { // eslint-disable-line react/pr
               Object.keys(players).map(index => {
                 return (
                   <Grid.Column key={index} textAlign='center'>
-                    <div className={`${indexOfActivePlayer === parseInt(index) ? 'glowing-text-active' : 'glowing-text-inactive'} text-md`}>
+                    <div className={`${indexOfActivePlayer === parseInt(index,10) ? 'glowing-text-active' : 'glowing-text-inactive'} text-md`}>
                       {players[index].name}
                     </div>
-                    <div className={`${indexOfActivePlayer === parseInt(index) ? 'glowing-text-active' : 'glowing-text-inactive'} text-sm`}>
+                    <div className={`${indexOfActivePlayer === parseInt(index,10) ? 'glowing-text-active' : 'glowing-text-inactive'} text-sm`}>
                       * {players[index].totalScore} *
                     </div>
                   </Grid.Column>);
