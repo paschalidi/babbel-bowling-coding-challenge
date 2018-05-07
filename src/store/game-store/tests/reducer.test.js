@@ -1,6 +1,5 @@
 import { reducer } from '../index';
 import * as t from '../actionTypes';
-import * as G from '../../../utils/global';
 
 
 export const SCORES = {
@@ -223,7 +222,7 @@ describe('app reducer', () => {
     expect(
       reducer(INITIAL_STATE, {
         type: t.SET_STRIKE,
-        payload: { rounds:5 }
+        payload: { rounds: 5 }
 
       })
     ).toEqual({
@@ -256,7 +255,7 @@ describe('app reducer', () => {
   it('should handle SET_SPARE', () => {
     expect(
       reducer(INITIAL_STATE, {
-        type: t.SET_SPARE,
+        type: t.SET_SPARE
       })
     ).toEqual({
       players: {
@@ -288,7 +287,7 @@ describe('app reducer', () => {
   it('should handle REDUCE_BONUS_ROUNDS', () => {
     expect(
       reducer(INITIAL_STATE, {
-        type: t.REDUCE_BONUS_ROUNDS,
+        type: t.REDUCE_BONUS_ROUNDS
       })
     ).toEqual({
       players: {

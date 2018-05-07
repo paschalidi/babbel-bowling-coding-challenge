@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ScoreTable renders 1`] = `
+exports[`PlayerSelectionPanel renders 1`] = `
 <div
   className="eleven column row"
 >

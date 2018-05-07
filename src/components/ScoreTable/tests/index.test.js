@@ -1,11 +1,16 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import ScoreTable from '../index';
+import { Provider } from 'react-redux';
 
+import Store from '../../../store/configure';
+const StoreInstance = Store();
 
-test('ScoreTable renders', () => {
+test('PlayerSelectionPanel renders', () => {
   const component = renderer.create(
-    <ScoreTable />
+    <Provider store={StoreInstance}>
+      <ScoreTable />
+    </Provider>
   );
   let tree;
 
