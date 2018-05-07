@@ -1,4 +1,5 @@
 import React from 'react';
+import PT from 'prop-types';
 import { connect } from 'react-redux';
 import InitialGamePanel from '../InitialGamePanel';
 import PlayerSelectionPanel from '../PlayerSelectionPanel';
@@ -27,5 +28,15 @@ class App extends React.Component { // eslint-disable-line react/prefer-stateles
 function mapStateToProps(state) {
   return { ...state.game };
 }
+
+App.defaultProps = {
+  show: 'InitialGamePanel',
+  gameRound: 0,
+};
+
+App.ScoreTable = {
+  show: PT.string,
+  gameRound: PT.number,
+};
 
 export default connect(mapStateToProps)(App);

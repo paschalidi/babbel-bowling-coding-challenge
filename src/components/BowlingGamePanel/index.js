@@ -9,6 +9,7 @@
 
 import React from 'react';
 import { connect } from 'react-redux';
+import PT from 'prop-types';
 import * as R from 'ramda';
 import * as actions from '../../store/game-store/actions';
 import { Grid, Button } from 'semantic-ui-react';
@@ -147,7 +148,11 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps, actions)(BowlingGamePanel);
+BowlingGamePanel.ScoreTable = {
+  amountOfPlayers: PT.number.isRequired,
+  players: PT.object.isRequired,
+  gameRound: PT.number.isRequired,
+  indexOfActivePlayer: PT.number.isRequired
+};
 
-// todo make the pins
-// tests
+export default connect(mapStateToProps, actions)(BowlingGamePanel);

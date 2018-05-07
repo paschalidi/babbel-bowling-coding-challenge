@@ -12,6 +12,7 @@ import { Grid, Button } from 'semantic-ui-react';
 import { connect } from 'react-redux';
 import * as actions from '../../store/game-store/actions';
 import * as R from 'ramda';
+import PT from 'prop-types';
 
 
 class GameOverPanel extends React.Component { // eslint-disable-line react/prefer-stateless-function
@@ -69,4 +70,8 @@ function mapStateToProps(state) {
   return { ...state.game };
 }
 
+GameOverPanel.ScoreTable = {
+  amountOfPlayers: PT.number.isRequired,
+  players: PT.object.isRequired
+};
 export default connect(mapStateToProps, actions)(GameOverPanel);

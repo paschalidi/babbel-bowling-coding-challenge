@@ -8,9 +8,9 @@
 /* eslint-disable react/prop-types */
 
 import React, { Fragment } from 'react';
+import PT from 'prop-types';
 import { Grid } from 'semantic-ui-react';
 import { LAST_ROUND } from '../../utils/constants';
-import PT from 'prop-types';
 import styles from './styles.css';
 
 

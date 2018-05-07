@@ -8,6 +8,7 @@
 /* eslint-disable react/prop-types */
 
 import React, { Fragment } from 'react';
+import PT from 'prop-types';
 import { connect } from 'react-redux';
 import * as actions from '../../store/game-store/actions';
 import { Grid, Button, Input } from 'semantic-ui-react';
@@ -76,5 +77,9 @@ class PlayerSelectionPanel extends React.Component { // eslint-disable-line reac
 function mapStateToProps(state) {
   return { ...state.game };
 }
+
+PlayerSelectionPanel.ScoreTable = {
+  players: PT.object.isRequired
+};
 
 export default connect(mapStateToProps, actions)(PlayerSelectionPanel);
