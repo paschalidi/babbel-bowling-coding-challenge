@@ -11,6 +11,7 @@ import React, { Fragment } from 'react';
 import PT from 'prop-types';
 import { Grid } from 'semantic-ui-react';
 import { LAST_ROUND } from '../../utils/constants';
+// eslint-disable-next-line
 import styles from './styles.css';
 
 
